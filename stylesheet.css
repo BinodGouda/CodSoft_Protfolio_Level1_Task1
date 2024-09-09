@@ -1,0 +1,280 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* font-family: "Mitr", sans-serif; */
+    font-family: "Pacifico",cursive;
+    background-color: lightcyan;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    z-index:100;
+    width: 100%;
+}
+
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 19px;
+    padding: 0px 70px 0px 30px;
+    gap:25px;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out; 
+    background-color:lightcyan;
+}
+
+#navigation{
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 75px;
+    cursor: pointer;
+}
+#navigation a{
+    all:unset;
+    width: 8vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid transparent 0.15rem; 
+    border-radius: 10px; 
+    transition: border-color 0.3s ease-in-out;
+    &:hover{
+        color: rgb(0, 4, 255);
+        transform: scaleX(1);
+       
+        
+    }
+}
+section{
+    padding-top: 4vh;
+    margin: 0px 10rem;
+    height: 90vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+#home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.photo{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto 0;
+    border-radius:50%;
+    background-image: url("image/profilephoto.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    box-shadow: 
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #06f495,
+    inset 0 0 2rem #06f495,
+    0 0 4rem #487ef5,
+    inset 0 0 4rem #487ef5;
+}
+.content{
+    margin-top: 10px;
+    align-self: center;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.3rem;
+}
+h4{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    border: .2rem solid rgb(40, 101, 255);
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: rgb(40, 101, 255);
+    cursor: pointer;
+}
+button:hover{
+    background: transparent;
+}
+
+#about{
+    position: relative;
+    margin-top: 20px;
+    height: 70vh;
+    align-self: center;
+    text-align: center;
+}
+.about_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 3rem;
+    height: 80vh;
+}
+.aboutphoto{
+    display: flex;
+    height: 850px;
+    width: 850px;
+    margin: auto 0;
+    /* border-radius:30%; */
+    background-image: url("image/about.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.about-content .fa-solid{
+    font-size: 2.5rem;
+}
+.about-content{
+    display: flex;
+    flex-direction:column;
+    min-width: max-content;
+}
+
+.edu-detail{
+    margin-top: 1.5rem;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#skills{
+    position: relative;
+    margin-top: 20px;
+    height: 50vh;
+    align-self: center;
+    text-align: center;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.skillsDetails{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    gap: 4.5rem;
+}
+.bar i{
+    font-size: 2rem;
+    margin-top: 1rem;
+    width: 3rem;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.info{
+    font-size: 2rem;
+}
+#project{
+    position: relative;
+    margin-top: 20px;
+    height: 70vh;
+    align-self: center;
+    text-align: center;
+}
+.projectContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.pro-details{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    margin: 1.2rem;
+    flex: 1;
+    padding: 5px 5px 5px 5px  ;
+    
+    border-radius: 1.5rem;
+}
+#contact{
+    position: relative;
+    margin-top: 20px;
+    height: 70vh;
+    align-self: center;
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.contact-container h3{
+    font-size: 2.5rem;
+}
+.contact-form{
+    text-align: left;
+}
+.from-group{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 1.5rem;
+    border:solid rgb(53, 53, 53) 3px ;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.contact-info{
+    text-align: left;
+    
+}
+i{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: blue;
+}
+  
+footer{
+    height: 20vh;
+    margin: 4rem .5rem 0rem .5rem;
+}
+  
+footer p{
+    text-align: center;
+}
+
+
